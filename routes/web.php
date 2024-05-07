@@ -6,9 +6,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todoapp', function () {
+Route::get('/todolist', function () {
     return view('todoapp.index');
-})->name('todoapp.index');
+})->name('todolist.index');
+
+Route::get('/contact', function () {
+    return view('contact.index');
+})->name('contact.index');
 
 Route::middleware([
     'auth:sanctum',
