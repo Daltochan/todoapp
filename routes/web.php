@@ -6,7 +6,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/todolist', [App\Http\Controllers\ToDoListController::class, 'index'])->name('todolist.index'); {
+Route::get('/todolist', [App\Http\Controllers\ToDoListController::class, 'index'])->name('todolist.index');
 
 Route::get('/contact', function () {
     return view('contact.index');
