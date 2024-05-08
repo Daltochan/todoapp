@@ -19,7 +19,6 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    text-align: center;
 }
 
 .fancy-menu li a:hover {
@@ -39,7 +38,7 @@ main h1 {
     border-bottom: 2px solid #333;
     margin-bottom: 20px;
 }
-form {
+form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,4 +65,41 @@ form button {
 
 form button:hover {
     background-color: #444;
+}
+form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form button:hover {
+    background-color: #444;
+}
+.add-task-form button {
+    background-color: #4CAF50; /* Green */
+}
+
+.delete-task-form button {
+    background-color: #f44336; /* Red */
+}
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+}
+ul {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+.task-item span {
+    text-align: left;
+}
+.delete-task-form {
+    text-align: left;
+    width: 10%;
 }

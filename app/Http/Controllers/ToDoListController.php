@@ -26,4 +26,10 @@ class ToDoListController extends Controller
 
         return redirect()->route('todolist.index');
     }
+    public function destroy(Task $task)
+    {
+        $task->delete();
+
+        return redirect()->route('todolist.index');
+    }
 }
