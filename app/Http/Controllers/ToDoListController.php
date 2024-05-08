@@ -32,4 +32,10 @@ class ToDoListController extends Controller
 
         return redirect()->route('todolist.index');
     }
-}
+    public function update(Task $task, Request $request)
+    {
+        $task->content = request('content');
+        $task->save();
+
+        return redirect()->route('todolist.index');
+    }}

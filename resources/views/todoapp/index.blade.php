@@ -15,7 +15,11 @@
     <ul>
         <li>
             <div class="task-item">
-                <span>{{ $task->content }}</span>
+                <form method="POST" action="{{ route("todolist.update", $task->id) }}">
+                    @csrf
+                    <input type="text" name="content" value="{{ $task->content }}">
+                    <button type="submit">EDIT</button>
+                </form>
                 <form method="POST" action="{{ route("todolist.destroy",$task) }}" class="delete-task-form">
                     @csrf
                     @method("DELETE")
